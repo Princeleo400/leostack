@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
+import Leo from "../img/Leo.jpg";
 import PrimaryButton from "./PrimaryButton";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Ohaga.pdf";
@@ -10,7 +10,7 @@ function ImageSection() {
     <ImageSectionStyled>
       <div className="left-content">
         <div className="image__content">
-            <img src={resume} alt="Leo" />
+            <img src={Leo} alt="Leo" />
         </div>
       </div>
       <div className="right-content">
@@ -67,6 +67,8 @@ const ImageSectionStyled = styled.div`
     place-items: center;
     @media screen and (max-width: 1000px) {
       margin-bottom: 2rem;
+      width: 93%;
+
 
     }
     
@@ -116,6 +118,11 @@ const ImageSectionStyled = styled.div`
       .info {
         p {
           padding: 0.3rem 0;
+        }
+      }
+      .info-title{
+        @media screen and (max-width: 1000px) {
+          width: 90%;
         }
       }
     }

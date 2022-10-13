@@ -23,8 +23,8 @@ const GlobalStyle = createGlobalStyle`
 } */
 
 .light-theme{
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
+    --primary-color: #2563eb;
+    --primary-color-light: #3b82f6;
     --secondary-color: #ff7675;
     --secondary-color-2: rgb(150, 162, 188);
     --text-color: #dae4fb;
@@ -44,12 +44,12 @@ const GlobalStyle = createGlobalStyle`
 }
 .dark-theme{
     --primary-color-2: #00eaff;
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
+    --primary-color: #2563eb;
+    --primary-color-light: #3b82f6;
     --secondary-color: #6c757d;
     --secondary-color-2: rgb(150, 162, 188);
     --text-color: #dae4fb;
-    --background-dark-color: #10121A;
+    --background-dark-color: #0F172A;
     --background-dark-grey: #191D2B;
     --border-color: #2e344e;
     --background-light-color: #F1F1F1;

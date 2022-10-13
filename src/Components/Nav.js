@@ -30,7 +30,7 @@ const DownNav = () => {
         // activeClassName={active === "home" ? "active" : ""}
         activeClassName={`${pathname === home && "active"}`}
         className="tooltip"
-        data-tooltip="Tooltip Content"
+        data-tooltip="Home"
         exact
       >
         <HomeOutlined />
@@ -39,6 +39,8 @@ const DownNav = () => {
         to="/about"
         activeClassName={`${pathname === about && "active"}`}
         onClick={() => setActive("about")}
+        className="tooltip"
+        data-tooltip="About"
         exact
       >
         <PersonOutline />
@@ -48,6 +50,8 @@ const DownNav = () => {
         to="/resume"
         activeClassName={`${pathname === resume && "active"}`}
         onClick={() => setActive("resume")}
+        data-tooltip="Resume"
+        className="tooltip"
         exact
       >
         <BookOutlined />
@@ -57,6 +61,8 @@ const DownNav = () => {
         to="/portfolios"
         activeClassName={`${pathname === portfolios && "active"}`}
         onClick={() => setActive("portfolios")}
+        data-tooltip="Portfolios"
+        className="tooltip"
         exact
       >
         <DashboardOutlined />
@@ -75,6 +81,8 @@ const DownNav = () => {
         to="/contact"
         activeClassName={`${pathname === contact && "active"}`}
         onClick={() => setActive("contact")}
+        data-tooltip="Contact"
+        className="tooltip"
         exact
       >
         <MailOutline />
