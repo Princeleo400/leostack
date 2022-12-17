@@ -5,11 +5,14 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import Particle from "../Components/Particle";
 import { LinkedIn, Mail, WhatsApp } from "@material-ui/icons";
 import "../app.scss";
-import CV from "../data/CV_Chukwuemeka_Ohaga.pdf"
+import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
+import logo from "../img/LEOPhotoRoom(2).png";
 
 function HomePage() {
   return (
     <HomePageStyled>
+      <img src={logo} alt="" style={{ width: 120, margin: 20 }}></img>
+
       <div className="particle-con">
         <Particle />
       </div>
@@ -62,7 +65,7 @@ function HomePage() {
         </div>
         {/*  <Button variant="outlined">Outlined</Button> */}
 
-        <a href={CV} download className="link-btn">
+        <a href={CV} className="link-btn" target="_blank" rel="noreferrer">
           Download CV <span></span> <span></span> <span></span> <span></span>
         </a>
       </div>

@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all .4s ease-in-out;
     
 }

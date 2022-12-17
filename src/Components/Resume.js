@@ -19,7 +19,7 @@ function Resume() {
         </div>
         <div className="resume-content">
           <ResumeItem
-            year={"2021"}
+            year={"2022"}
             title={"Front End Developer"}
             subTitle={"Proctorme"}
             text={` Worked with a front end team to develop and maintain Web applications
@@ -30,7 +30,7 @@ function Resume() {
             title={"Android Developer"}
             subTitle={"Thinkup Core"}
             text={
-              "Designed and developed android applications for clients. "
+              "Designed and developed android applications for clients. Optimized applications, participated in design discussions, code reviews snd software architechure. "
             }
           />
           <ResumeItem

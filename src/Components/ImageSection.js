@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Leo from "../img/Leo.jpg";
 import PrimaryButton from "./PrimaryButton";
 import "../app.scss";
-import CV from "../data/CV_Chukwuemeka_Ohaga.pdf";
+import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
 
 function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
         <div className="image__content">
-            <img src={Leo} alt="Leo" />
+          <img src={Leo} alt="Leo" />
         </div>
       </div>
       <div className="right-content">
@@ -18,11 +18,15 @@ function ImageSection() {
           I'm <span> Leo</span>
         </h4>
         <p className="paragraph">
-          An experienced software developer, with web and android aplications.
-          Skilled in ReactJs, Javascript, bootstrap, HTML and CSS 
-          for building front-end web applications. PHP, MySQL, NodeJs for server side applications.
-          I have great desire for innovation, I have good communication skills and collaboration among team members.
-          I also manage small team of developers and designers who come together to build digital solutions for businesses.
+          A well experienced and dedicated software developer, with over 3 years
+          working with web and android aplications, developing responsive
+          websites and application, Integrating apis, maintaining different
+          projects. I'm Skilled in ReactJs, Javascript, bootstrap, HTML and CSS
+          for building front-end web applications. PHP, MySQL, NodeJs for server
+          side applications. I have great desire for innovation, I have good
+          communication skills and collaboration among team members. I also
+          manage small team of developers and designers who come together to
+          build digital solutions for businesses.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -40,7 +44,7 @@ function ImageSection() {
             <p>: Available </p>
           </div>
         </div>
-        <a href={CV} download className="link-btn">
+        <a href={CV} target="_blank" rel="noreferrer" className="link-btn">
           Download CV <span></span> <span></span> <span></span> <span></span>
         </a>{" "}
       </div>
@@ -53,41 +57,43 @@ const ImageSectionStyled = styled.div`
   display: grid;
   grid-template-columns: 40% 50%;
   gap: 10%;
- @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     grid-template-columns: 100%;
-   
+    gap: 1%;
   }
   .left-content {
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius:  2rem;
-    background: linear-gradient(45deg, transparent, var(--primary-color), transparent);
+    border-radius: 2rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--primary-color),
+      transparent
+    );
     display: grid;
     place-items: center;
     @media screen and (max-width: 1000px) {
       margin-bottom: 2rem;
       width: 93%;
-
-
     }
-    
-    .image__content{
+
+    .image__content {
       width: 101%;
       height: 100%;
       border-radius: 2rem;
       overflow: hidden;
-      transform: rotate(10deg);    
+      transform: rotate(10deg);
       img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-      &:hover{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &:hover {
         transform: rotate(0);
+      }
     }
-   
-  }
   }
   .right-content {
     width: 100%;
@@ -104,6 +110,9 @@ const ImageSectionStyled = styled.div`
     }
     .paragraph {
       padding: 1rem 0;
+      @media screen and (max-width: 1000px) {
+        font-size: 1rem;
+      }
     }
     .about-info {
       display: flex;
@@ -118,11 +127,18 @@ const ImageSectionStyled = styled.div`
       .info {
         p {
           padding: 0.3rem 0;
+          @media screen and (min-width: 320px) and (max-width: 800px) {
+            font-size: 14px;
+          }
         }
       }
-      .info-title{
-        @media screen and (max-width: 1000px) {
+      .info-title {
+        @media screen and (min-width: 800px) and (max-width: 1000px) {
           width: 90%;
+        }
+        @media screen and (min-width: 320px) and (max-width: 800px) {
+          width: 32%;
+          padding-right: 3px;
         }
       }
     }

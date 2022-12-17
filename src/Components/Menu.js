@@ -11,22 +11,24 @@ function Menu({ menuItem }) {
           <div className="grid-item" key={item.id}>
             <div className="portfolio-content">
               <div className="portfolio-image">
-                <img src={item.image} alt="" />
-                {/*<ul>
-                                    <li>
-                                        <a href={item.link1}>
-                                            <GitHub />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href={item.link2}>
-                                            <Pinterest />
-                                        </a>
-                                    </li>
-                                </ul>*/}
+                <a href={item.link1} target="_blank" rel="noreferrer">
+                  <img src={item.image} alt="" />
+                </a>
+                {/* <ul>
+                  <li>
+                    <a href={item.link1}>
+                      <GitHub />
+                    </a>
+                  </li>
+                  <li>
+                    <a href={item.link2}>
+                      <Pinterest />
+                    </a>
+                  </li>
+                </ul> */}
               </div>
-              <a href={item.link1}>
-                <h6>{item.title}</h6>{" "}
+              <a href={item.link1} target="_blank" rel="noreferrer">
+                <h6>{item.title}</h6>
               </a>
               <p>{item.text}</p>
             </div>

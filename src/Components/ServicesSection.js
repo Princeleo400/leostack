@@ -17,7 +17,8 @@ function ServicesSection() {
             image={design}
             title={"Web Development"}
             paragraph={
-              "I build beautiful, responsive, scalable web application and websites for clients, businesses, and startups." }
+              "I build beautiful, responsive, scalable web application and websites for clients, businesses, and startups."
+            }
           />
 
           <div className="mid-card">
@@ -43,6 +44,7 @@ function ServicesSection() {
 }
 
 const ServicesSectionStyled = styled.section`
+  padding-top: 2px;
   .services {
     margin-top: 5rem;
     display: grid;
@@ -56,6 +58,7 @@ const ServicesSectionStyled = styled.section`
     }
     @media screen and (max-width: 650px) {
       grid-template-columns: repeat(1, 1fr);
+      margin-top: 3rem;
     }
   }
 `;
