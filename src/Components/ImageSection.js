@@ -77,6 +77,7 @@ const ImageSectionStyled = styled.div`
     @media screen and (max-width: 1000px) {
       margin-bottom: 2rem;
       width: 93%;
+      transform: scale(0.6);
     }
 
     .image__content {

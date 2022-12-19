@@ -156,6 +156,10 @@ h6{
       font-size: 1.7rem;
       color: var(--white-color);
     }
+    @media screen and (max-width: 1000px) {
+        transform: scale(0.8);
+        right: -12px;
+    }
   }
 
   //Nav Toggler
