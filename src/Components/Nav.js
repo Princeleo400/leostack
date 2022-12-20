@@ -35,17 +35,7 @@ const DownNav = () => {
       >
         <HomeOutlined />
       </NavLink>
-      <NavLink
-        to="/about"
-        activeClassName={`${pathname === about && "active"}`}
-        onClick={() => setActive("about")}
-        className="tooltip"
-        data-tooltip="About"
-        exact
-      >
-        <PersonOutline />
-      </NavLink>
-
+   
       <NavLink
         to="/resume"
         activeClassName={`${pathname === resume && "active"}`}
@@ -55,6 +45,17 @@ const DownNav = () => {
         exact
       >
         <BookOutlined />
+      </NavLink>
+
+      <NavLink
+        to="/about"
+        activeClassName={`${pathname === about && "active"}`}
+        onClick={() => setActive("about")}
+        className="tooltip"
+        data-tooltip="About"
+        exact
+      >
+        <PersonOutline />
       </NavLink>
 
       <NavLink
