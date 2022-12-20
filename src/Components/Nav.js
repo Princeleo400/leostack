@@ -75,6 +75,7 @@ const DownNav = () => {
         onClick={() => setActive("blogs")}
         activeClassName="active-class"
         exact
+        
       >
         Blogs
       </NavLink> */}
