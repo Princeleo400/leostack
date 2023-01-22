@@ -51,7 +51,7 @@ const portfolios = [
     id: 5,
     category: "React JS",
     image: CovidTracker,
-    link1: "https://leostack-covidtracker.netlify.app",
+    link1: "https://leostack-covid19tracker.netlify.app/",
     link2: "https://github.com/princeleo400",
     title: "COVID-19 Tracker",
     text: "A covid-19 tracker",

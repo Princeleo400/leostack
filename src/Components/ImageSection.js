@@ -4,13 +4,14 @@ import Leo from "../img/Leo.jpg";
 import PrimaryButton from "./PrimaryButton";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
+import Skeleton from 'react-loading-skeleton'
 
 function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
         <div className="image__content">
-          <img src={Leo} alt="Leo" />
+          <img src={Leo} alt="Leo" loading="lazy"/>
         </div>
       </div>
       <div className="right-content">
