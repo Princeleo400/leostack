@@ -64,7 +64,7 @@ const portfolios = [
     link1: "https://leostack-covid19tracker.netlify.app/",
     link2: "https://github.com/princeleo400",
     title: "COVID-19 Tracker",
-    text: "A covid-19 tracker",
+    text: "A covid-19 tracker. This tracker provides data on global COVID-19 cases and deaths by country, region, and income-level. Developed with react javascript.",
   },
   {
     id: 7,
