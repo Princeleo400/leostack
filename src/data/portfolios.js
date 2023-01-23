@@ -8,6 +8,7 @@ import CovidTracker from "../img/portImages/proctorme.png";
 import TicTacToe from "../img/portImages/leostacktictactoe.png";
 import GPAsystem from "../img/portImages/gradepointaveragesystem.png";
 import Leostack from "../img/portImages/leostack.png";
+import RubysLibrary from "../img/portImages/RubysLibrary.png";
 
 const portfolios = [
   {
@@ -40,6 +41,15 @@ const portfolios = [
   },
   {
     id: 4,
+    category: "React JS",
+    image: RubysLibrary,
+    link1: "http://rubyslibrary.netlify.app/",
+    link2: "https://github.com/princeleo400",
+    title: "Ruby's Library",
+    text: `The Ruby’s library was created majorly to solve the problem of tech newbies searching for the right resources and books to start their career. The internet is filled with so many resources and anyone who’s just starting out can get confused. This is why Ruby’s library contains a wide range of educational books in almost the faucets of tech which includes - web development, product design, data analysis, product management and artificial intelligence.`,
+  },
+  {
+    id: 5,
     category: "Javascript",
     image: Thinkupcore,
     link1: "https://thinkupcore.com",
@@ -48,7 +58,7 @@ const portfolios = [
     text: "ThinkUp Core is s a virtual based digital/tech. core (hub) that deals on digital activities and operations.",
   },
   {
-    id: 5,
+    id: 6,
     category: "React JS",
     image: CovidTracker,
     link1: "https://leostack-covid19tracker.netlify.app/",
@@ -57,7 +67,7 @@ const portfolios = [
     text: "A covid-19 tracker",
   },
   {
-    id: 6,
+    id: 7,
     category: "React JS",
     image: Leostack,
     link1: "https://leostack.netlify.app",
@@ -66,7 +76,7 @@ const portfolios = [
     text: "Developed using different front end technologies such as React, Material UI, Styled-Components and more...",
   },
   {
-    id: 7,
+    id: 8,
     category: "Java",
     image: FoodPantryApp,
     link1: "https://bit.ly/TCfoodpantryapp",
@@ -77,7 +87,7 @@ const portfolios = [
         to support the vulnerable communities.`,
   },
   {
-    id: 8,
+    id: 9,
     category: "CSS",
     image: FoodPantryWeb,
     link1: "https://thinkupcore.com/foodpantry",
@@ -88,7 +98,7 @@ const portfolios = [
         to support the vulnerable communities.`,
   },
   {
-    id: 9,
+    id: 10,
     category: "Javascript",
     image: TicTacToe,
     link1: "https://leostack-tictactoe.netlify.app",
@@ -97,7 +107,7 @@ const portfolios = [
     text: `A user friendly tictactoe, also available as a progressive web app. Designed with html, css, and javascript.`,
   },
   {
-    id: 10,
+    id: 11,
     category: "Javascript",
     image: GPAsystem,
     link1: "https://leostack-gpasystem.netlify.app",
