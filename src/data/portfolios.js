@@ -4,7 +4,7 @@ import FoodPantryWeb from "../img/portImages/foodpantryweb.png";
 import Thinkupcore from "../img/portImages/Thinkupcore.png";
 import MusicPlayer from "../img/portImages/leostack-music.png";
 import Proctorme from "../img/portImages/proctorme.png";
-import CovidTracker from "../img/portImages/proctorme.png";
+import CovidTracker from "../img/portImages/covid.png";
 import TicTacToe from "../img/portImages/leostacktictactoe.png";
 import GPAsystem from "../img/portImages/gradepointaveragesystem.png";
 import Leostack from "../img/portImages/leostack.png";
