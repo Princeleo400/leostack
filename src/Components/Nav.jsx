@@ -27,44 +27,44 @@ const DownNav = () => {
       <NavLink
         to="/"
         onClick={() => setActive("home")}
-        // activeClassName={active === "home" ? "active" : ""}
-        activeClassName={`${pathname === home && "active"}`}
+        // activeclassname={active === "home" ? "active" : ""}
+        activeclassname={`${pathname === home && "active"}`}
         className="tooltip"
         data-tooltip="Home"
-        exact
+        end
       >
         <HomeOutlined />
       </NavLink>
 
       <NavLink
         to="/resume"
-        activeClassName={`${pathname === resume && "active"}`}
+        activeclassname={`${pathname === resume && "active"}`}
         onClick={() => setActive("resume")}
         data-tooltip="Resume"
         className="tooltip"
-        exact
+        end
       >
         <BookOutlined />
       </NavLink>
 
       <NavLink
         to="/about"
-        activeClassName={`${pathname === about && "active"}`}
+        activeclassname={`${pathname === about && "active"}`}
         onClick={() => setActive("about")}
         className="tooltip"
         data-tooltip="About"
-        exact
+        end
       >
         <PersonOutline />
       </NavLink>
 
       <NavLink
         to="/portfolios"
-        activeClassName={`${pathname === portfolios && "active"}`}
+        activeclassname={`${pathname === portfolios && "active"}`}
         onClick={() => setActive("portfolios")}
         data-tooltip="Portfolios"
         className="tooltip"
-        exact
+        end
       >
         <DashboardOutlined />
       </NavLink>
@@ -73,19 +73,19 @@ const DownNav = () => {
         to="/blogs"
         className={active === 0 ? "nav-item" : ""}
         onClick={() => setActive("blogs")}
-        activeClassName="active-class"
-        exact
+        activeclassname="active-class"
+        end
         
       >
         Blogs
       </NavLink> */}
       <NavLink
         to="/contact"
-        activeClassName={`${pathname === contact && "active"}`}
+        activeclassname={`${pathname === contact && "active"}`}
         onClick={() => setActive("contact")}
         data-tooltip="Contact"
         className="tooltip"
-        exact
+        end
       >
         <MailOutline />
       </NavLink>

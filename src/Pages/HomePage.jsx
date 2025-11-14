@@ -5,13 +5,14 @@ import { LinkedIn, Mail, Facebook, WhatsApp } from "@mui/icons-material";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
 import logo from "../img/LEOPhotoRoom(2).png";
+import Particle from "../Components/Particle";
 
 const HomePage = () => {
   return (
     <HomePageStyled>
       <img src={logo} alt="" style={{ width: 120, margin: 20 }}></img>
 
-      <div className="particle-con">{/* <Particle /> */}</div>
+      <div className="particle-con"><Particle /></div>
       <div className="typography">
         <h1>
           Hi, I'm <span className="leo-title">LEO </span>
@@ -69,7 +70,7 @@ const HomePage = () => {
   );
 };
 
-const HomePageStyled = styled.header`
+const HomePageStyled = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
