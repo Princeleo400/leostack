@@ -4,21 +4,18 @@ import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
-import ResumePage from './Pages/ResumePage';
-import PortfoliosPage from './Pages/PortfoliosPage';
-import BlogsPage from './Pages/BlogsPage';
-import ContactPage from './Pages/ContactPage';
+import ResumePage from "./Pages/ResumePage";
+import PortfoliosPage from "./Pages/PortfoliosPage";
+import BlogsPage from "./Pages/BlogsPage";
+import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
-// import MenuIcon from '@material-ui/icons/Menu';
 import Switch from "@mui/material/Switch";
 import NotFound from "./Pages/NotFound";
-// import { IconButton } from "@material-ui/core";
 import DownNav from "./Components/Nav";
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
   const [checked, setChecked] = useState(false);
-  const [navToggle, setNavToggle] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -35,7 +32,6 @@ function App() {
   };
   return (
     <div className="App">
-      {/* <Sidebar navToggle={navToggle} /> */}
 
       <div className="theme">
         <div className="light-dark-mode">
@@ -60,6 +56,7 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div>
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -67,9 +64,11 @@ function App() {
           <Route path="/portfolios" element={<PortfoliosPage />} exact />
           <Route path="/blogs" element={<BlogsPage />} exact />
           <Route path="/contact" element={<ContactPage />} exact />
-          <Route path="*" element={<NotFound />} /> 
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </MainContentStyled>
+
+      <DownNav />
     </div>
   );
 }

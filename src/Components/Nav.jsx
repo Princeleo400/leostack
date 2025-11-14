@@ -6,7 +6,7 @@ import {
   PersonOutline,
   MailOutline,
   DashboardOutlined,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 import "../app.scss"
 
 const DownNav = () => {

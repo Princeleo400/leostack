@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
 import Title from "./Title";
 import SmallTitle from "./SmallTitle";
-import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
-import SchoolIcon from "@material-ui/icons/School";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import SchoolIcon from "@mui/icons-material/School";
 import ResumeItem from "./ResumeItem";
 
 function Resume() {

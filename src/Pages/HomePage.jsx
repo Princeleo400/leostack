@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-// import FacebookIcon from "@material-ui/icons/Facebook";
 import GithubIcon from "@mui/icons-material/GitHub";
 import { LinkedIn, Mail, Facebook, WhatsApp } from "@mui/icons-material";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
 import logo from "../img/LEOPhotoRoom(2).png";
-import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const HomePage = () => {
