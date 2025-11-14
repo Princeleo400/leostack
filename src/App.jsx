@@ -3,7 +3,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
-// import AboutPage from './Pages/AboutPage';
+import AboutPage from './Pages/AboutPage';
 // import ResumePage from './Pages/ResumePage';
 // import PortfoliosPage from './Pages/PortfoliosPage';
 // import BlogsPage from './Pages/BlogsPage';
@@ -61,7 +61,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/about" element={<AboutPage />} /> */}
+          <Route path="/about" element={<AboutPage />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
           {/* <Route path="*" element={<NotFound />} />  */}
         </Routes>

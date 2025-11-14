@@ -4,7 +4,7 @@ import Leo from "../img/Leo.jpg";
 import PrimaryButton from "./PrimaryButton";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
-import Skeleton from 'react-loading-skeleton'
+// import Skeleton from 'react-loading-skeleton'
 
 function ImageSection() {
   return (

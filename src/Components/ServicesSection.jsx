@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
-import Title from "../Components/Title";
-import ServiceCard from "../Components/ServiceCard";
+import Title from "./Title";
+import ServiceCard from "./ServiceCard";
 import design from "../img/design.svg";
 import intelligence from "../img/intelligence.svg";
 import gamedev from "../img/game-dev.svg";
