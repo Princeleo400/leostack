@@ -6,7 +6,6 @@ import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
 import logo from "../img/LEOPhotoRoom(2).png";
 
-
 const HomePage = () => {
   return (
     <HomePageStyled>

@@ -20,10 +20,9 @@ const ContactItemStyled = styled.div`
   display: flex;
   align-items: center;
 
-  
   @media screen and (max-width: 440px) {
     padding: 10px;
-}
+  }
   &:not(:last-child) {
     margin-bottom: 2.5rem;
   }
@@ -40,7 +39,7 @@ const ContactItemStyled = styled.div`
     }
 
     @media screen and (max-width: 440px) {
-        padding: 10px;
+      padding: 10px;
     }
   }
 
@@ -51,13 +50,13 @@ const ContactItemStyled = styled.div`
       padding-bottom: 0.6rem;
       @media screen and (max-width: 440px) {
         font-size: 18px !important;
-    }
+      }
     }
     p {
       padding: 0.1rem 0;
       @media screen and (max-width: 440px) {
         font-size: 14px !important;
-    }
+      }
     }
   }
 `;

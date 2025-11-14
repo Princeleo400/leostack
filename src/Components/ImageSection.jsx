@@ -11,7 +11,7 @@ function ImageSection() {
     <ImageSectionStyled>
       <div className="left-content">
         <div className="image__content">
-          <img src={Leo} alt="Leo" loading="lazy"/>
+          <img src={Leo} alt="Leo" loading="lazy" />
         </div>
       </div>
       <div className="right-content">

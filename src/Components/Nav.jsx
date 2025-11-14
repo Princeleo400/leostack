@@ -7,7 +7,7 @@ import {
   MailOutline,
   DashboardOutlined,
 } from "@mui/icons-material";
-import "../app.scss"
+import "../app.scss";
 
 const DownNav = () => {
   const home = "/";
@@ -35,7 +35,7 @@ const DownNav = () => {
       >
         <HomeOutlined />
       </NavLink>
-   
+
       <NavLink
         to="/resume"
         activeClassName={`${pathname === resume && "active"}`}

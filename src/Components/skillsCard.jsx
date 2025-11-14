@@ -19,6 +19,7 @@ const SkillsCardStyled = styled.div`
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   transition: all 0.4s ease-in-out;
+
   &:hover {
     border-top: 8px solid var(--primary-color);
     transform: translateY(3px);

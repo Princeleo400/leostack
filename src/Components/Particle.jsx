@@ -1,7 +1,7 @@
 // import Particles from 'react-particles-js';
 import Particles from "@tsparticles/react";
 
-import React from 'react';
+import React from "react";
 
 function Particle() {
   return (
@@ -67,7 +67,7 @@ function Particle() {
               }}
       /> */}
     </>
-  )
+  );
 }
 
 export default Particle;

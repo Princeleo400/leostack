@@ -4,7 +4,7 @@ import { InnerLayout } from "../styles/Layouts";
 import Title from "./Title";
 import ProgressBar from "./ProgressBar";
 import {
-    Android,
+  Android,
   Bootstrap,
   CSS,
   Firebase,
