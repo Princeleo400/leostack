@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import GitHub from "@material-ui/icons/GitHub";
-import Pinterest from "@material-ui/icons/Pinterest";
 
 function Menu({ menuItem }) {
   return (
