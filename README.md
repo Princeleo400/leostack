@@ -1,16 +1,87 @@
-# React + Vite
+<div align="center">🌐 LeoStack</div>
+<div align="center"> A modern and clean personal portfolio website for showcasing development skills, projects, and professional experience. <br/><br/> <a href="https://leostack.netlify.app/">🌍 Live Demo</a> <br/> </div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ⭐ Overview
 
-Currently, two official plugins are available:
+LeoStack is a sleek and minimal portfolio website built to highlight LEO’s expertise in developing scalable web applications and software solutions. It features a clean layout, responsive design, and a direct CV download option.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## React Compiler
+# ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clean, modern UI
 
-## Expanding the ESLint configuration
+Responsive design for all screen sizes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Direct Download CV button
+
+Fast performance built with Vite
+
+Easy to customize and extend
+
+Styled using styled-components and CSS variables
+
+<br>
+
+# 🛠 Tech Stack
+
+Category	Tools
+Framework	React + Vite
+Styling	CSS Variables, styled-components
+Deployment	Netlify
+Languages	JavaScript (ES6+), HTML, CSS
+📦 Installation & Setup
+
+
+## Clone the repository:
+
+git clone https://github.com/your-username/leostack.git
+
+
+Navigate into the project folder:
+
+cd leostack
+
+
+Install dependencies:
+
+npm install or
+yarn install
+
+
+Start the development server:
+
+npm run dev
+or
+yarn dev
+
+
+Build for production:
+
+npm run build or
+yarn build
+
+
+Preview build:
+
+npm run preview
+
+<br>
+
+# 🚀 Deployment
+
+The site is deployed on Netlify and automatically updates when new commits are pushed.
+
+Live website:
+https://leostack.netlify.app/
+
+To deploy manually:
+
+Run npm run build
+
+<br> 
+<br>
+
+# 📬 Contact
+
+`Chukwuemeka Michael Ohaga Portfolio:` https://leostack.netlify.app/
