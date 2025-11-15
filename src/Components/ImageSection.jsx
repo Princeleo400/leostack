@@ -29,7 +29,7 @@ function ImageSection() {
           manage small team of developers and designers who come together to
           build digital solutions for businesses. */}
           Senior Frontend Engineer with over 4+ years of experience designing
-          and building responsive, high-performance web applications for
+          and building responsive and high-performance web applications for
           startups, digital marketplaces, edtech platforms and AI-powered
           solutions.
           <br />
@@ -39,7 +39,7 @@ function ImageSection() {
           optimization, accessibility, and search engine optimization.
           <br />
           Driven by a strong desire for innovation, I am passionate about
-          creating user-focused, responsive, and highly discoverable digital
+          creating user-focused products, and globally impactful digital
           solutions that deliver real value for businesses.
         </p>
         <div className="about-info">
