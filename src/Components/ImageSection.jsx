@@ -19,7 +19,7 @@ function ImageSection() {
           I'm <span> Leo</span>
         </h4>
         <p className="paragraph">
-          A well experienced and dedicated software developer, with over 3 years
+          {/* A well experienced and dedicated software developer, with over 3 years
           working with web and android aplications, developing responsive
           websites and application, Integrating apis, maintaining different
           projects. I'm Skilled in ReactJs, Javascript, bootstrap, HTML and CSS
@@ -27,22 +27,43 @@ function ImageSection() {
           side applications. I have great desire for innovation, I have good
           communication skills and collaboration among team members. I also
           manage small team of developers and designers who come together to
-          build digital solutions for businesses.
+          build digital solutions for businesses. */}
+          Senior Frontend Engineer with over 4+ years of experience designing
+          and building responsive, high-performance web applications for
+          startups, digital marketplaces, edtech platforms and AI-powered
+          solutions.
+          <br />
+          I'm skilled in React, Nextjs, Angular, JavaScript/TypeScript,
+          Tailwind, modern UI frameworks, and SEO best practices, with hands-on
+          experience in UI/UX development, API integration, performance
+          optimization, accessibility, and search engine optimization.
+          <br />
+          Driven by a strong desire for innovation, I am passionate about
+          creating user-focused, responsive, and highly discoverable digital
+          solutions that deliver real value for businesses.
         </p>
         <div className="about-info">
           <div className="info-title">
             <p>Full Name</p>
-            <p>Nationality </p>
-            <p>Languages </p>
+            <p>Email</p>
+            {/* <p>Nationality </p> */}
             <p>Location</p>
             <p>Job/Freelance</p>
+            <p>Languages </p>
           </div>
           <div className="info">
             <p>: Chukwuemeka Michael Ohaga</p>
-            <p>: Nigerian </p>
-            <p>: English </p>
-            <p>: Owerri, Nigeria </p>
+            {/* <p>: Nigerian </p> */}
+            <p>
+              :{" "}
+              <a href="mailto:ohagamichael@gmail.com" target="_blank">
+                ohagamichael@gmail.com
+              </a>{" "}
+            </p>
+            <p>: Portharcout, Nigeria </p>
+
             <p>: Available </p>
+            <p>: English </p>
           </div>
         </div>
         <a href={CV} target="_blank" rel="noreferrer" className="link-btn">
@@ -112,6 +133,7 @@ const ImageSectionStyled = styled.div`
     }
     .paragraph {
       padding: 1rem 0;
+      line-height: 26px;
       @media screen and (max-width: 1000px) {
         font-size: 1rem;
       }

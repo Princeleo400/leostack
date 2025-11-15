@@ -60,7 +60,7 @@ function Resume() {
       title: "Android Developer",
       subTitle: "Thinkup Core",
       text: `Designed and developed android applications for clients. 
-      Optimized applications, participated in design discussions, code reviews snd software architechure. `,
+      Optimized applications, participated in design discussions, code reviews snd software architecture.`,
     },
     {
       year: "2019",
