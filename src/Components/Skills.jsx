@@ -13,12 +13,17 @@ import {
   Java,
   Javascript,
   MaterialUi,
+  NextJs,
+  Angular,
   Node,
   PHP,
   ReactJs,
   Redux,
   SCSS,
   Tailwind,
+  Wordpress,
+  Typescript,
+  Typescript2,
 } from "../assets/svg/skills";
 import SkillsCard from "./skillsCard";
 import ResponsiveWeb from "../assets/img/icons8-responsive-design-64.png";
@@ -30,15 +35,19 @@ function Skills() {
       <InnerLayout>
         <div className="skills">
           <SkillsCard image={<Javascript />} title={"Javascript"} />
+          <SkillsCard image={<Typescript />} title={"Javascript"} />
           <SkillsCard image={<CSS />} title={"CSS"} />
           <SkillsCard image={<HTML />} title={"HTML"} />
-          <SkillsCard image={<ReactJs />} title={"ReactJs"} />
+          <SkillsCard image={<ReactJs />} title={"React.Js"} />
+          <SkillsCard image={<NextJs />} title={"Next.Js"} />
+          <SkillsCard image={<Angular />} title={"Angular"} />
+          <SkillsCard image={<Tailwind />} title={"Tailwind"} />
           <SkillsCard image={<PHP />} title={"PHP"} />
           <SkillsCard image={<SCSS />} title={"SCSS"} />
           <SkillsCard image={<Bootstrap />} title={"Bootstrap"} />
+          <SkillsCard image={<Wordpress />} title={"Wordpress"} />
           <SkillsCard image={<MaterialUi />} title={"MaterialUi"} />
-          <SkillsCard image={<Tailwind />} title={"Tailwind"} />
-          <SkillsCard image={<Node />} title={"NodeJs"} />
+          <SkillsCard image={<Node />} title={"Node"} />
           <SkillsCard
             image={<img src={ResponsiveWeb} style={{ width: 40 }} alt="" />}
             title={"Responsive Web design"}
