@@ -17,7 +17,7 @@ function ServicesSection() {
             image={design}
             title={"Web Development"}
             paragraph={
-              "I build beautiful, responsive, scalable web application and websites for clients, businesses, and startups."
+              "I create beautiful, responsive, and scalable web applications and websites for clients, businesses, and startups, ensuring optimal performance, user experience, and modern design."
             }
           />
 
@@ -25,8 +25,8 @@ function ServicesSection() {
             <ServiceCard
               image={intelligence}
               title={"Android Development"}
-              paragraph={`Expertise in developing user friendly, innovative and high-functioning Android-based applications
-               ready for Google play store publishing. 
+              paragraph={`I develop innovative, high-performing, and user-friendly Android applications, 
+                fully optimized for Google Play Store and tailored to meet business or project-specific requirements.
                `}
             />
           </div>
@@ -35,7 +35,8 @@ function ServicesSection() {
             title={"Digital Marketing"}
             paragraph={`With wide variety of marketing strategies and technologies, 
             I promote products and services through digital channels, 
-            such as social media, SEO, email, and mobile apps, to reach consumers online.`}
+            such as social media, SEO, social media, email campaigns, and mobile app promotion, to increase online visibility, 
+            engagement, and conversions for products and services.`}
           />
         </div>
       </ServicesSectionStyled>
