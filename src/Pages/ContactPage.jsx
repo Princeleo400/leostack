@@ -169,7 +169,7 @@ function ContactPage() {
             <ContactItem
               title={"Address"}
               icon={location}
-              cont1={"Owerri, Nigeria"}
+              cont1={"Portharcout, Nigeria"}
             />
           </div>
         </InnerLayout>
