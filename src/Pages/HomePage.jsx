@@ -17,7 +17,7 @@ const HomePage = () => {
         <h1>
           Hi, I'm <span className="leo-title">LEO </span>
         </h1>
-        <h2>I develop scalable web applications and softwares. <br /> Writing code and saving the world. </h2>
+        <h2>I develop scalable web applications and&nbsp;softwares. <br /> Writing code and saving the world. </h2>
         <div className="icons">
           <a
             href="mailto:ohagamichael@gmail.com"
