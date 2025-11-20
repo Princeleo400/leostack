@@ -10,7 +10,7 @@ function Menu({ menuItem }) {
             <div className="portfolio-content">
               <div className="portfolio-image">
                 <a href={item.link1} target="_blank" rel="noreferrer">
-                  <img src={item.image} alt="" />
+                  <img src={item.image} alt={item?.title} />
                 </a>
                 {/* <ul>
                   <li>
