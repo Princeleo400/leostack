@@ -51,7 +51,7 @@ const portfolios = [
     It combines flexible payment options, in-depth analytics, and community features for both creators and learners.`,
   },
   {
-    id: 13,
+    id: 14,
     category: "React JS",
     image: learngual,
     link1: "https://learngual.com/",
@@ -61,7 +61,7 @@ const portfolios = [
     It was built with an intelligent feedback system, learners can progress at their own pace and build confidence in speaking as naturally as a native.`,
   },
   {
-    id: 13,
+    id: 17,
     category: "React JS",
     image: meeney,
     link1: "https://meeney.com/",
@@ -91,7 +91,7 @@ const portfolios = [
     It lowers the entry barrier for first-time home buyers by making shared ownership transparent and accessible.`,
   },
   {
-    id: 16,
+    id: 18,
     category: "Wordpress",
     image: otawise,
     link1: "https://otawise.com/",
@@ -102,7 +102,7 @@ const portfolios = [
     to streamline workflows and boost efficiency`,
   },
   {
-    id: 14,
+    id: 19,
     category: "React JS",
     image: ukech,
     link1: "https://ukechcharityf.org/",
