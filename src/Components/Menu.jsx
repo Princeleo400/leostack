@@ -1,16 +1,56 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import Skeleton from "react-loading-skeleton";
+import { useInView } from "react-intersection-observer";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function Menu({ menuItem }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // only load once
+    threshold: 0.1, // 10% visible = considered "in view"
+  });
+
+  const [loaded, setLoaded] = useState(false);
+
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const img = imgRef.current;
+
+    // Check if image is already loaded (cached)
+    if (img && img.complete) {
+      // setLoaded(true);
+    }
+  }, []);
+
   return (
     <MenuItemStyled>
       {menuItem.map((item) => {
         return (
           <div className="grid-item" key={item.id}>
             <div className="portfolio-content">
-              <div className="portfolio-image">
+              <div className="portfolio-image" ref={ref}>
                 <a href={item.link1} target="_blank" rel="noreferrer">
-                  <img src={item.image} alt={item?.title} />
+                  {!inView || (!loaded && <Skeleton height={"30vh"} />)}
+                  {
+                    <img
+                      // loading="lazy"
+                      ref={imgRef}
+                      src={item.image}
+                      alt={item?.title}
+                      onLoad={(e) => {
+                        setLoaded(true);
+                        console.log("Image loaded", e);
+                      }}
+                      onError={(e) => {
+                        setLoaded(true);
+                        console.log("Image failed to load", e);
+                      }}
+                      style={{
+                        display: loaded ? "block" : "none",
+                      }}
+                    />
+                  }
                 </a>
                 {/* <ul>
                   <li>
