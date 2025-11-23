@@ -31,7 +31,7 @@ function Menu({ menuItem }) {
             <div className="portfolio-content">
               <div className="portfolio-image" ref={ref}>
                 <a href={item.link1} target="_blank" rel="noreferrer">
-                  {!inView || (!loaded && <Skeleton height={"30vh"} />)}
+                  {!inView || (!loaded && <Skeleton height={"200px"} />)}
                   {
                     <img
                       // loading="lazy"
@@ -97,7 +97,7 @@ const MenuItemStyled = styled.div`
       }
       img {
         width: 100%;
-        height: 30vh;
+        height: 200px;
         object-fit: cover;
       }
       ul {
