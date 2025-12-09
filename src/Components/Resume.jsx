@@ -21,7 +21,7 @@ function Resume() {
 `,
     },
     {
-      year: "2020 - 2025",
+      year: "2020 - 2024",
       title: "Front End Engineer",
       subTitle: "Proctorme",
       text: `Worked with a front end team to develop Developed the frontend of ProctorMe, 
@@ -56,7 +56,7 @@ function Resume() {
       contributing to UX/UI development, interactive components, and API integrations.`,
     },
     {
-      year: "2019 - 2022",
+      year: "2019 - 2021",
       title: "Android Developer",
       subTitle: "Thinkup Core",
       text: `Designed and developed android applications for clients. 
