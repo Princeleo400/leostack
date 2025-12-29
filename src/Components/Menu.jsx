@@ -11,17 +11,9 @@ function Menu({ menuItem }) {
   });
 
   const [loaded, setLoaded] = useState(false);
+  console.log("🚀 ~ Menu ~ loaded:", loaded, inView)
 
   const imgRef = useRef(null);
-
-  useEffect(() => {
-    const img = imgRef.current;
-
-    // Check if image is already loaded (cached)
-    if (img && img.complete) {
-      // setLoaded(true);
-    }
-  }, []);
 
   return (
     <MenuItemStyled>
@@ -31,26 +23,29 @@ function Menu({ menuItem }) {
             <div className="portfolio-content">
               <div className="portfolio-image" ref={ref}>
                 <a href={item.link1} target="_blank" rel="noreferrer">
-                  {!inView || (!loaded && <Skeleton height={"200px"} />)}
-                  {
+                  {!loaded && (
+                    <Skeleton
+                      height={200}
+                      style={{
+                        display: "block",
+                        lineHeight: "unset",
+                      }}
+                    />
+                  )}
                     <img
-                      // loading="lazy"
                       ref={imgRef}
                       src={item.image}
-                      alt={item?.title}
-                      onLoad={(e) => {
+                      alt={item?.title || "Menu item"}
+                      onLoad={() => {
                         setLoaded(true);
-                        console.log("Image loaded", e);
-                      }}
-                      onError={(e) => {
-                        setLoaded(true);
-                        console.log("Image failed to load", e);
                       }}
                       style={{
                         display: loaded ? "block" : "none",
+                        objectFit: "cover",
+                        // Prevent progressive loading appearance
+                        imageRendering: "-webkit-optimize-contrast",
                       }}
                     />
-                  }
                 </a>
                 {/* <ul>
                   <li>
