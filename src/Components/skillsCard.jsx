@@ -36,6 +36,14 @@ const SkillsCardStyled = styled.div`
   }
   .container {
     padding: 1.2rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 8px;
+      h6 {
+        font-size: 16px;
+      }
+    }
+
     h4 {
       color: var(--white-color);
       font-size: 1.6rem;

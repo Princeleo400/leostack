@@ -35,7 +35,7 @@ function Skills() {
       <InnerLayout>
         <div className="skills">
           <SkillsCard image={<Javascript />} title={"Javascript"} />
-          <SkillsCard image={<Typescript />} title={"Javascript"} />
+          <SkillsCard image={<Typescript />} title={"Typescript"} />
           <SkillsCard image={<CSS />} title={"CSS"} />
           <SkillsCard image={<HTML />} title={"HTML"} />
           <SkillsCard image={<ReactJs />} title={"React.Js"} />
@@ -69,14 +69,20 @@ const SkillsStyled = styled.section`
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
+
     @media screen and (max-width: 700px) {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 16px;
+      grid-column-gap: 8px;
     }
     @media (min-width: 701px) and (max-width: 814px) {
       grid-template-columns: repeat(2, 1fr);
     }
     @media (min-width: 815px) and (max-width: 1060px) {
       grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 375px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
