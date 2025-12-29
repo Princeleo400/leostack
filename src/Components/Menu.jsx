@@ -94,6 +94,8 @@ const MenuItemStyled = styled.div`
         width: 100%;
         height: 200px;
         object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 8px;
       }
       ul {
         transform: translateY(-600px);
