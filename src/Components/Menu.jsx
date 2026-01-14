@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Skeleton from "react-loading-skeleton";
 import { useInView } from "react-intersection-observer";
 import "react-loading-skeleton/dist/skeleton.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Menu({ menuItem }) {
   const { ref, inView } = useInView({
@@ -11,8 +13,6 @@ function Menu({ menuItem }) {
   });
 
   const [loaded, setLoaded] = useState(false);
-  console.log("🚀 ~ Menu ~ loaded:", loaded, inView)
-
   const imgRef = useRef(null);
 
   return (
@@ -23,7 +23,17 @@ function Menu({ menuItem }) {
             <div className="portfolio-content">
               <div className="portfolio-image" ref={ref}>
                 <a href={item.link1} target="_blank" rel="noreferrer">
-                  {!loaded && (
+                  <LazyLoadImage
+                    alt={""}
+                    effect="blur"
+                    wrapperProps={{
+                      // If you need to, you can tweak the effect transition using the wrapper style.
+                      style: { transitionDelay: "1s" },
+                    }}
+                    src={item.image}
+                  />
+
+                  {/* {!loaded && (
                     <Skeleton
                       height={200}
                       style={{
@@ -31,8 +41,8 @@ function Menu({ menuItem }) {
                         lineHeight: "unset",
                       }}
                     />
-                  )}
-                    <img
+                  )} */}
+                  {/* <img
                       ref={imgRef}
                       src={item.image}
                       alt={item?.title || "Menu item"}
@@ -45,7 +55,7 @@ function Menu({ menuItem }) {
                         // Prevent progressive loading appearance
                         imageRendering: "-webkit-optimize-contrast",
                       }}
-                    />
+                    /> */}
                 </a>
                 {/* <ul>
                   <li>
