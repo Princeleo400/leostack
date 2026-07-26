@@ -28,7 +28,7 @@ function ImageSection() {
           communication skills and collaboration among team members. I also
           manage small team of developers and designers who come together to
           build digital solutions for businesses. */}
-          Senior Frontend Engineer with over 4+ years of experience designing
+          Senior Frontend Engineer with over 4 years of experience designing
           and building responsive and high-performance web applications for
           startups, digital marketplaces, edtech platforms and AI-powered
           solutions.
@@ -60,7 +60,7 @@ function ImageSection() {
                 ohagamichael@gmail.com
               </a>{" "}
             </p>
-            <p>: Portharcout, Nigeria </p>
+            <p>: Port Harcourt, Nigeria </p>
 
             <p>: Available </p>
             <p>: English </p>

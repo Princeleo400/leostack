@@ -156,11 +156,11 @@ function ContactPage() {
             </form>
           </div>
           <div className="right-content">
-            <ContactItem
+            {/* <ContactItem
               title={"Phone"}
               icon={phone}
               cont1={"+2349033098293"}
-            />
+            /> */}
             <ContactItem
               title={"Email"}
               icon={email}
@@ -169,7 +169,7 @@ function ContactPage() {
             <ContactItem
               title={"Address"}
               icon={location}
-              cont1={"Portharcout, Nigeria"}
+              cont1={"Port Harcourt, Nigeria"}
             />
           </div>
         </InnerLayout>
