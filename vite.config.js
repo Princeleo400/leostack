@@ -1,13 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { PrerenderPlugin } from "vite-plugin-prerender";
+import path from "path";
+import { fileURLToPath } from "url";
+import { createRequire } from "module";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const require = createRequire(import.meta.url);
+const vitePrerender = require("vite-plugin-prerender");
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    PrerenderPlugin({
-      staticDir: "dist",
+    vitePrerender({
+      staticDir: path.join(__dirname, "dist"),
       routes: ["/", "/about", "/resume", "/portfolios", "/contact"],
     }),
   ],
