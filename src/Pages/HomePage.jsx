@@ -12,29 +12,29 @@ const HomePage = () => {
     <HomePageStyled>
       <img src={logo} alt="" style={{ width: 120, margin: 20 }}></img>
 
-      <div className="particle-con"><Particle /></div>
+      <div className="particle-con">
+        <Particle />
+      </div>
       <div className="typography">
         <h1>
           Hi, I'm <span className="leo-title">LEO </span>
         </h1>
-        <h2>I develop scalable web applications and&nbsp;softwares. <br /> Writing code and saving the world. </h2>
+        <h2>
+          I develop scalable web applications.
+          {/* <br /> Building product-grade web apps for Startups{" "} */}
+        </h2>
+        <p className="roleTitle">
+          Frontend Engineer · React · TypeScript · 4+ years
+        </p>
         <div className="icons">
-          <a
-            href="mailto:ohagamichael@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="icon i-mail"
-          >
-            <Mail />
-          </a>
-          <a
+          {/* <a
             href="https://facebook.com/michael.ohaga"
             target="_blank"
             rel="noreferrer"
             className="icon i-facebook"
           >
             <Facebook />
-          </a>
+          </a> */}
           <a
             href="https://github.com/Princeleo400"
             target="_blank"
@@ -50,6 +50,14 @@ const HomePage = () => {
             className="icon i-linkedin"
           >
             <LinkedIn />
+          </a>
+          <a
+            href="mailto:ohagamichael@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="icon i-mail"
+          >
+            <Mail />
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=2349033098293&text=Hello%20Leo"
@@ -74,6 +82,13 @@ const HomePageStyled = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+
+  .roleTitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0;
+    text-align: center;
+  }
 
   .typography {
     position: absolute;
