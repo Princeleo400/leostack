@@ -1,0 +1,15 @@
+# robots.txt — leostack.netlify.app
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block access to build artifacts and config files
+# (Netlify won't serve these anyway, but explicit is better)
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /vite.config.js
+
+# Sitemap location — tells Google, Bing, and others where to find it
+Sitemap: https://leostack.netlify.app/sitemap.xml
