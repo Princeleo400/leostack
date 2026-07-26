@@ -18,7 +18,7 @@ export default defineConfig({
       staticDir: path.join(__dirname, "dist"),
       routes: ["/", "/about", "/resume", "/portfolios", "/contact"],
       rendererOptions: {
-        // ✅ wait for React to fully mount before capturing HTML
+        // wait for React to fully mount before capturing HTML
         renderAfterTime: 2000, // wait 2 seconds after page load
         // OR more reliably, wait for a specific element:
         renderAfterElementExists: "#root > *", // waits until root has children
