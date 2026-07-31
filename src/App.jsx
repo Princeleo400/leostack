@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import './index.css';
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
@@ -12,6 +13,8 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Switch from "@mui/material/Switch";
 import NotFound from "./Pages/NotFound";
 import DownNav from "./Components/Nav";
+import Sidebar from "./Components/Sidebar";
+import Navbar from "./Components/Navigation";
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
@@ -32,7 +35,8 @@ function App() {
   };
   return (
     <div className="App">
-
+      {/* <Sidebar navToggle={"nav-toggle"} /> */}
+{/* <Navbar /> */}
       <div className="theme">
         <div className="light-dark-mode">
           <div className="left-content">
@@ -49,7 +53,7 @@ function App() {
           </div>
         </div>
       </div>
-      <MainContentStyled>
+      <MainContentStyled >
         <div className="lines">
           <div className="line-1"></div>
           <div className="line-2"></div>

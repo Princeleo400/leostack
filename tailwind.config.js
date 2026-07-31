@@ -38,11 +38,19 @@ export default {
       maxWidth: {
         container: "1080px",
       },
+      keyframes: {
+        pop: {
+          "0%": { transform: "scale(.8)" },
+          "50%": { transform: "scale(1.25)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
       animation: {
         "fade-up": "fadeUp 0.6s ease forwards",
         "fade-in": "fadeIn 0.4s ease forwards",
         "scale-in": "scaleIn 0.3s ease forwards",
         "pulse-dot": "pulse 2.5s ease-in-out infinite",
+        "pop": "pop .35s ease",
       },
     },
   },
