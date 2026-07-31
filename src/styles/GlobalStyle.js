@@ -1,7 +1,39 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+
+  :root {
+    --bg-primary:    #080e1a;
+    --bg-card:       #0d1928;
+    --bg-card-hover: #122035;
+    --bg-input:      rgba(255, 255, 255, 0.04);
+
+    --blue:          #4580ff;
+    --blue-dim:      rgba(69, 128, 255, 0.11);
+    --blue-border:   rgba(69, 128, 255, 0.30);
+    --blue-hover:    rgba(69, 128, 255, 0.18);
+
+    --text-primary:   #f0f4ff;
+    --text-secondary: #7a9abb;
+    --text-dim:       #3d6080;
+
+    --border:         rgba(255, 255, 255, 0.07);
+    --border-strong:  rgba(255, 255, 255, 0.13);
+
+    --green:          #22c55e;
+    --green-dim:      rgba(34, 197, 94, 0.12);
+    --green-border:   rgba(34, 197, 94, 0.28);
+
+    --red:            #ef4444;
+    --amber:          #f59e0b;
+
+    --dock-bg:        rgba(8, 14, 26, 0.88);
+    --dock-border:    rgba(255, 255, 255, 0.10);
+
+    --font:           'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
 
 .light-theme{
     --primary-color: #2563eb;
@@ -22,6 +54,30 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
+
+    --bg-primary:    #eef2f9;
+    --bg-card:       #ffffff;
+    --bg-card-hover: #f4f7ff;
+    --bg-input:      rgba(0, 0, 0, 0.04);
+
+    --blue:          #3366ff;
+    --blue-dim:      rgba(51, 102, 255, 0.09);
+    --blue-border:   rgba(51, 102, 255, 0.28);
+    --blue-hover:    rgba(51, 102, 255, 0.14);
+
+    --text-primary:   #0f172a;
+    --text-secondary: #4a5568;
+    --text-dim:       #8a9bb0;
+
+    --border:         rgba(0, 0, 0, 0.08);
+    --border-strong:  rgba(0, 0, 0, 0.14);
+
+    --green:          #16a34a;
+    --green-dim:      rgba(22, 163, 74, 0.10);
+    --green-border:   rgba(22, 163, 74, 0.25);
+
+    --dock-bg:        rgba(238, 242, 249, 0.92);
+    --dock-border:    rgba(0, 0, 0, 0.10);
 }
 .dark-theme{
     --primary-color-2: #00eaff;
@@ -59,9 +115,12 @@ const GlobalStyle = createGlobalStyle`
 
 html{
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body{
+    font-family: var(--font);
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
     transition: all .4s ease-in-out;
@@ -169,6 +228,30 @@ h6{
 //Global Media Queries
 
 
+  /* ── Keyframe animations (global, referenced by styled-components) ──────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.45; }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes barFill {
+    from { width: 0; }
+  }
 
 `;
 
