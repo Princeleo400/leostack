@@ -29,8 +29,9 @@ const GlobalStyle = createGlobalStyle`
     --red:            #ef4444;
     --amber:          #f59e0b;
 
-    --dock-bg:        rgba(8, 14, 26, 0.88);
+    --dock-bg:        #101827;
     --dock-border:    rgba(255, 255, 255, 0.10);
+    --dock-icon:      #fff;
 
     --font:           'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
@@ -76,8 +77,9 @@ const GlobalStyle = createGlobalStyle`
     --green-dim:      rgba(22, 163, 74, 0.10);
     --green-border:   rgba(22, 163, 74, 0.25);
 
-    --dock-bg:        rgba(238, 242, 249, 0.92);
+    --dock-bg:        #F8FAFF;
     --dock-border:    rgba(0, 0, 0, 0.10);
+    --dock-icon:      #4580ff;
 }
 .dark-theme{
     --primary-color-2: #00eaff;

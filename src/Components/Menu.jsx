@@ -3,8 +3,18 @@ import styled from "styled-components";
 import Skeleton from "react-loading-skeleton";
 import { useInView } from "react-intersection-observer";
 import "react-loading-skeleton/dist/skeleton.css";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import {
+  ActionBtn,
+  Card,
+  CardImg,
+  CardImgWrap,
+  CardOverlay,
+  OverlayBtn,
+  TagChip,
+} from "../styles/portfolio.styled";
+import { ExtIcon } from "../assets/svg/icons";
 
 function Menu({ menuItem }) {
   const { ref, inView } = useInView({
@@ -16,69 +26,91 @@ function Menu({ menuItem }) {
   const imgRef = useRef(null);
 
   return (
-    <MenuItemStyled>
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6"
+      role="list"
+    >
       {menuItem.map((item) => {
         return (
-          <div className="grid-item" key={item.id}>
-            <div className="portfolio-content">
-              <div className="portfolio-image" ref={ref}>
-                <a href={item.link1} target="_blank" rel="noreferrer">
-                  <LazyLoadImage
-                    alt={""}
-                    effect="blur"
-                    wrapperProps={{
-                      // If you need to, you can tweak the effect transition using the wrapper style.
-                      style: { transitionDelay: "1s" },
-                    }}
-                    src={item.image}
-                  />
+          <Card>
+            <CardImgWrap>
+              <CardImg
+                src={item?.image}
+                alt={`${item?.title} screenshot`}
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+              <CardOverlay>
+                {item?.link1 && (
+                  <OverlayBtn
+                    href={item?.link1}
+                    target="_blank"
+                    rel="noreferrer"
+                    $primary
+                  >
+                    View live
+                    {/* <ExtIcon /> */}
+                  </OverlayBtn>
+                )}
+                {item?.link2 && (
+                  <OverlayBtn
+                    href={item?.link2}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                    {/* <GHIcon /> */}
+                  </OverlayBtn>
+                )}
+              </CardOverlay>
+            </CardImgWrap>
 
-                  {/* {!loaded && (
-                    <Skeleton
-                      height={200}
-                      style={{
-                        display: "block",
-                        lineHeight: "unset",
-                      }}
-                    />
-                  )} */}
-                  {/* <img
-                      ref={imgRef}
-                      src={item.image}
-                      alt={item?.title || "Menu item"}
-                      onLoad={() => {
-                        setLoaded(true);
-                      }}
-                      style={{
-                        display: loaded ? "block" : "none",
-                        objectFit: "cover",
-                        // Prevent progressive loading appearance
-                        imageRendering: "-webkit-optimize-contrast",
-                      }}
-                    /> */}
-                </a>
-                {/* <ul>
-                  <li>
-                    <a href={item.link1}>
-                      <GitHub />
-                    </a>
-                  </li>
-                  <li>
-                    <a href={item.link2}>
-                      <Pinterest />
-                    </a>
-                  </li>
-                </ul> */}
+            <div className="flex flex-col gap-[10px] p-[18px] flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="text-[15px] font-semibold text-[var(--text-primary)] leading-snug">
+                  {item?.title}
+                </h3>
+                {/* {liveUrl && <LiveBadge>Live</LiveBadge>} */}
               </div>
-              <a href={item.link1} target="_blank" rel="noreferrer">
-                <h6>{item.title}</h6>
-              </a>
-              <p>{item.text}</p>
+              <div className="flex flex-wrap gap-[5px]">
+                {item?.tags?.map((t) => (
+                  <TagChip key={t}>{t}</TagChip>
+                ))}
+              </div>
+              <p className="text-[13px] text-[var(--text-secondary)] leading-relaxed flex-1 line-clamp-3">
+                {item?.description}
+              </p>
+              {(item?.link1 || item?.link2) && (
+                <div className="flex gap-2 mt-1">
+                  {item?.link1 && (
+                    <ActionBtn
+                      href={item?.link1}
+                      target="_blank"
+                      rel="noreferrer"
+                      $primary
+                    >
+                      Live site
+                      <ExtIcon />
+                    </ActionBtn>
+                  )}
+                  {/* {item?.link2 && (
+                    <ActionBtn
+                      href={item?.link2}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View code <GHIcon />
+                    </ActionBtn>
+                  )} */}
+                </div>
+              )}
             </div>
-          </div>
+          </Card>
         );
       })}
-    </MenuItemStyled>
+    </div>
   );
 }
 

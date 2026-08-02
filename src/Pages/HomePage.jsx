@@ -218,7 +218,7 @@ const RoleTag = styled.div`
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #7aabff;
+  color: var(--blue);
   background: var(--blue-dim);
   border: 0.5px solid var(--blue-border);
   padding: 6px 18px;
