@@ -166,3 +166,77 @@ export const MoonIcon = () => (
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
   </svg>
 );
+
+export const WebIcon = () => (
+  <svg
+    width="26"
+    height="26"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle className="globe-ring" cx="12" cy="12" r="10" />
+    <line className="globe-equator" x1="2" y1="12" x2="22" y2="12" />
+    <path
+      className="globe-meridian"
+      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+    />
+  </svg>
+);
+
+export const StackIcon = () => (
+  <svg
+    width="26"
+    height="26"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect
+      className="terminal-window"
+      x="3"
+      y="4"
+      width="18"
+      height="16"
+      rx="2"
+    />
+    <polyline className="terminal-arrow" points="8 9 11 12 8 15" />
+    <line className="terminal-line" x1="13" y1="15" x2="17" y2="15" />
+  </svg>
+);
+
+export const RocketIcon = () => (
+  <svg
+    width="26"
+    height="26"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path
+      className="rocket-flame"
+      d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
+    />
+    <path
+      className="rocket-body"
+      d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
+    />
+    <path
+      className="rocket-wing-left"
+      d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"
+    />
+    <path
+      className="rocket-wing-right"
+      d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"
+    />
+  </svg>
+);
