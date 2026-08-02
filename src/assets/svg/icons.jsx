@@ -107,10 +107,9 @@ export const GridIcon = () => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <rect x="3" y="3" width="8" height="8" rx="1" />
-    <rect x="13" y="3" width="8" height="8" rx="1" />
-    <rect x="3" y="13" width="8" height="8" rx="1" />
-    <rect x="13" y="13" width="8" height="8" rx="1" />
+    <rect className="portfolio-window" x="3" y="4" width="18" height="16" rx="2" />
+    <polyline className="portfolio-left" points="10 10 7 12 10 14" />
+    <polyline className="portfolio-right" points="14 10 17 12 14 14" />
   </svg>
 );
 

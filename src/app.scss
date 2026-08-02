@@ -192,7 +192,7 @@ nav {
       border-radius: 50%;
       opacity: 1;
       visibility: visible;
-      animation: ripple .6s ease;
+      animation: ripple 0.6s ease;
     }
 
     &:hover {
@@ -299,6 +299,18 @@ nav {
     animation: draw 0.7s ease-in-out forwards;
   }
 
+  .portfolio-left,
+  .portfolio-right {
+    stroke-dasharray: 12;
+    stroke-dashoffset: 12;
+    transition: stroke-dashoffset 0.4s ease;
+  }
+
+  .nav-link.active .portfolio-left,
+  .nav-link.active .portfolio-right {
+    stroke-dashoffset: 0;
+  }
+
   @keyframes draw {
     from {
       stroke-dashoffset: 100;
@@ -307,8 +319,6 @@ nav {
       stroke-dashoffset: 0;
     }
   }
-
-
 
   @keyframes orbit {
     0% {
@@ -327,14 +337,14 @@ nav {
   }
 
   @keyframes ripple {
-  0% {
-    opacity: .2;
-    transform: translate(-50%, -50%) scale(.2);
-  }
+    0% {
+      opacity: 0.2;
+      transform: translate(-50%, -50%) scale(0.2);
+    }
 
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1.7);
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.7);
+    }
   }
-}
 }
