@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-function Button({ filter, button }) {
+function Button({ filter, setFilter, button }) {
   return (
     <ButtonsStyled>
       {button.map((but, i) => {
         return (
-          <ButtonStyled key={i} onClick={() => filter(but)}>
+          <ButtonStyled
+            key={i}
+            $active={filter === but}
+            onClick={() => setFilter(but)}
+            role="tab"
+            aria-selected={filter === but}
+          >
             {but}
           </ButtonStyled>
         );
@@ -35,6 +41,24 @@ const ButtonStyled = styled.button`
 
   &:not(:last-child) {
     margin-right: 0.6rem;
+  }
+
+  padding: 7px 18px;
+  border-radius: 999px;
+  border: 0.5px solid
+    ${({ $active }) => ($active ? "var(--blue)" : "var(--border-strong)")};
+  background: ${({ $active }) => ($active ? "var(--blue)" : "transparent")};
+  color: ${({ $active }) => ($active ? "#fff" : "var(--text-secondary)")};
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: ${({ $active }) => ($active ? "#5a8fff" : "var(--blue-dim)")};
+    border-color: var(--blue);
+    color: ${({ $active }) => ($active ? "#fff" : "var(--blue)")};
   }
 `;
 const ButtonsStyled = styled.div`

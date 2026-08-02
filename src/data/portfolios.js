@@ -18,67 +18,94 @@ import learngual from "../img/portImages/learngual.png";
 import meeney from "../img/portImages/meeney.png";
 import otawise from "../img/portImages/otawise.png";
 
+export const FILTERS = [
+  "All",
+  "Next JS",
+  "React JS",
+  "WordPress",
+  "Javascript",
+  "Java",
+];
+
 const portfolios = [
   {
     id: 3,
     category: "Next JS",
     image: Proctorme,
+    tags: ["Next JS", "TypeScript"],
     link1: "https://proctorme.com",
     link2: "https://github.com/princeleo400",
     title: "Proctorme",
     text: `Proctorme is a leading remote proctoring platform in Africa committed to giving Africans access to the best AI-proctoring solution.
         With the platform, its very easy to  sit for  exams remotely and still maintain the integrity of the examination with robust AI-proctoring features .`,
+    description:
+      "Built the complete frontend for Africa's leading AI-proctoring platform — exam session UI, monitoring dashboard, and multi-role admin portal serving students across 8 African countries.",
   },
   {
     id: 12,
     category: "React JS",
     image: gankco,
+    tags: ["React JS", "Javascript"],
     link1: "https://gankcoenergy.com/",
     link2: "https://github.com/princeleo400",
     title: "Gankco Energy",
     text: `Gankco Energy is a 100% Nigerian upstream oil & gas engineering company. They specialize in well services, production enhancement, 
     equipment sales & rental, and well intervention. 
     Gankco delivers engineered solutions with a strong commitment to safety, quality, and local capacity building.`,
+    description:
+      "Designed and built the full marketing site and client portal for a 100% Nigerian upstream oil & gas company — production enhancement, equipment sales and well intervention.",
   },
   {
     id: 13,
     category: "React JS",
     image: vivifiy,
+    tags: ["Next JS", "React JS"],
     link1: "https://vivifiy.com/",
     link2: "https://github.com/princeleo400",
     title: "Vivifiy",
     text: `An all-in-one digital learning platform where creators can build, host, and sell courses, e-books, and mentorship programs.
     It combines flexible payment options, in-depth analytics, and community features for both creators and learners.`,
+    description:
+      "Built an all-in-one edtech platform — courses, e-books, mentorship, and analytics for creators. Implemented payment flows, community features and creator dashboards.",
   },
   {
     id: 14,
     category: "React JS",
     image: learngual,
+    tags: ["React JS", "Javascript"],
     link1: "https://learngual.com/",
     link2: "https://github.com/princeleo400",
     title: "Learngual",
     text: `Learngual is an AI-powered language-learning platform that helps users master any language and perfect their pronunciation. 
     It was built with an intelligent feedback system, learners can progress at their own pace and build confidence in speaking as naturally as a native.`,
+    description:
+      "Developed the UI for an AI-powered language-learning platform with adaptive feedback, progress tracking, and confidence-building exercises.",
   },
   {
     id: 17,
     category: "React JS",
     image: meeney,
+    tags: ["React JS", "Javascript"],
     link1: "https://meeney.com/",
     link2: "https://github.com/princeleo400",
     title: "Meeney",
     text: `Meeney is a community‑focused digital marketplace designed to help people shop and buy more easily from nearby sellers. 
     Currently in wait-list mode...`,
+    description:
+      "Community digital marketplace — product listings, local seller onboarding, cart and checkout flow. Currently in waitlist phase with active signups.",
   },
   {
     id: 15,
     category: "React JS",
     image: Esote,
+    tags: ["React JS", "TypeScript"],
     link1: "https://esote.io/",
     link2: "https://github.com/princeleo400",
     title: "Esote",
     text: `Esote is a remote-tech recruitment and management platform powered by AI. 
     It connects startups with pre-vetted tech talent (especially students) for affordable, real-world remote work.`,
+    description:
+      "Built the recruitment platform frontend — employer and candidate dashboards, vetted-talent listings, and a flexible pricing page for affordable remote tech hiring.",
   },
   {
     id: 16,
@@ -94,30 +121,42 @@ const portfolios = [
     id: 18,
     category: "Wordpress",
     image: otawise,
+    tags: ["Wordpress"],
     link1: "https://otawise.com/",
     link2: "https://github.com/princeleo400",
     title: "Otawise",
     text: `Otawise is an all‑in‑one, cloud-based business management platform built for both service companies and government agencies. 
     It was built to simplify core operations from office management and client relationship tracking to scheduling, invoicing, and time tracking, 
     to streamline workflows and boost efficiency`,
+    description:
+      "All-in-one cloud business management — CRM, client tracking, scheduling, invoicing, and time tracking dashboards for service companies and government agencies.",
   },
   {
     id: 19,
     category: "React JS",
     image: ukech,
+    tags: ["React JS", "Javascript"],
     link1: "https://ukechcharityf.org/",
     link2: "https://github.com/princeleo400",
     title: "Ukech Charity Foundation",
     text: `A nonprofit organization dedicated to empowering refugees especially children, by providing education, essential services, and support..`,
+    description:
+      "Built the website for a nonprofit empowering refugees through education and essential services — donation flow, programme pages, and volunteer sign-up.",
   },
+];
+
+export const olderProjects = [
   {
     id: 2,
     category: "React JS",
     image: MusicPlayer,
+    tags: ["React JS"],
     link1: "https://leostack-music.netlify.app",
     link2: "https://github.com/princeleo400",
     title: "Music App",
     text: "A Music Application developed with react",
+    description:
+      "A music player UI — playlist management, playback controls, and custom audio visualiser.",
   },
   {
     id: 4,
@@ -127,6 +166,8 @@ const portfolios = [
     link2: "https://github.com/princeleo400",
     title: "Ruby's Library",
     text: `The Ruby’s library was created majorly to solve the problem of tech newbies searching for the right resources and books to start their career. The internet is filled with so many resources and anyone who’s just starting out can get confused. This is why Ruby’s library contains a wide range of educational books in almost the faucets of tech which includes - web development, product design, data analysis, product management and artificial intelligence.`,
+    description:
+      "Resource hub for early-career tech developers — curated books, articles, and learning paths.",
   },
   {
     id: 5,
@@ -136,6 +177,8 @@ const portfolios = [
     link2: "https://github.com/princeleo400",
     title: "Thinkup core (virtual hub)",
     text: "ThinkUp Core is a virtual based digital/tech. core (hub) that deals on digital activities and operations.",
+    description:
+      "Virtual digital/tech hub connecting startups with resources, mentorship, and digital operations support.",
   },
   // {
   //   id: 6,

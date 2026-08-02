@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const MainLayout = styled.div`
   padding: 5rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
   @media screen and (max-width: 642px) {
     padding: 4rem;
   }
@@ -9,7 +13,7 @@ export const MainLayout = styled.div`
         padding: 3rem;
     } */
   @media screen and (max-width: 571px) {
-    padding: 2rem 0.625rem;
+    padding: 2rem 1rem;
   }
 `;
 export const InnerLayout = styled.div`
