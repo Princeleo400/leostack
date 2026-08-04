@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import GithubIcon from "@mui/icons-material/GitHub";
-import { LinkedIn, Mail, Facebook, WhatsApp } from "@mui/icons-material";
+import { LinkedIn, Mail, WhatsApp } from "@mui/icons-material";
 import "../app.scss";
 import CV from "../data/Chukwuemeka-Michael-Ohaga-Resume-CV.pdf";
 import logo from "../img/LEOPhotoRoom(2).png";
@@ -98,10 +97,6 @@ const HomePage = () => {
             Try the playground
           </PlaygroundBtn>
         </CtaRow>
-
-        <LearningWrap className="mb-6">
-          {/* <CurrentlyLearning /> */}
-        </LearningWrap>
       </div>
     </HomePageStyled>
   );
@@ -291,18 +286,5 @@ const PlaygroundBtn = styled(Link)`
     color: var(--blue);
     animation: pulse 2s ease-in-out infinite;
   }
-`;
-
-const LearningWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  ${fadeUpMixin("0.65s")}
-`;
-
-const PerfWrap = styled.div`
-  width: 100%;
-  max-width: 520px;
-  ${fadeUpMixin("0.75s")}
 `;
 export default HomePage;
