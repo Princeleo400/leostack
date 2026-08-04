@@ -224,8 +224,7 @@ export default function GitHubContributions() {
 
       {!loading && error && (
         <ErrorText>
-          Could not load contributions — update GITHUB_USERNAME in
-          GitHubContributions.jsx
+          Could not load contributions
         </ErrorText>
       )}
 
