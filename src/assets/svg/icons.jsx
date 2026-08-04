@@ -107,7 +107,14 @@ export const GridIcon = () => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <rect className="portfolio-window" x="3" y="4" width="18" height="16" rx="2" />
+    <rect
+      className="portfolio-window"
+      x="3"
+      y="4"
+      width="18"
+      height="16"
+      rx="2"
+    />
     <polyline className="portfolio-left" points="10 10 7 12 10 14" />
     <polyline className="portfolio-right" points="14 10 17 12 14 14" />
   </svg>
@@ -237,5 +244,20 @@ export const RocketIcon = () => (
       className="rocket-wing-right"
       d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"
     />
+  </svg>
+);
+
+export const SparkIcon = () => (
+  <svg
+    width="15"
+    height="15"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
   </svg>
 );

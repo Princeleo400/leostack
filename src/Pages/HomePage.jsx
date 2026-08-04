@@ -8,7 +8,7 @@ import logo from "../img/LEOPhotoRoom(2).png";
 import Particle from "../Components/Particle";
 import { btnPrimaryMixin, btnGhostMixin, fadeUpMixin } from "../styles/shared";
 import { Link } from "react-router-dom";
-import { ArrowIcon, DownloadIcon } from "../assets/svg/icons";
+import { ArrowIcon, DownloadIcon, SparkIcon } from "../assets/svg/icons";
 
 const HomePage = () => {
   return (
@@ -91,7 +91,17 @@ const HomePage = () => {
             Download CV <span></span> <span></span> <span></span> <span></span>{" "}
             <DownloadIcon />
           </GhostAnchor>
+          <PlaygroundBtn to="/playground">
+            <span className="spark">
+              <SparkIcon />
+            </span>
+            Try the playground
+          </PlaygroundBtn>
         </CtaRow>
+
+        <LearningWrap className="mb-6">
+          {/* <CurrentlyLearning /> */}
+        </LearningWrap>
       </div>
     </HomePageStyled>
   );
@@ -250,5 +260,49 @@ const CtaRow = styled.div`
       justify-content: center;
     }
   }
+`;
+
+const PlaygroundBtn = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 0.5px solid var(--border-strong);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--text-primary);
+    border-color: var(--blue-border);
+    background: var(--blue-dim);
+    transform: translateY(-1px);
+  }
+
+  span.spark {
+    display: inline-flex;
+    color: var(--blue);
+    animation: pulse 2s ease-in-out infinite;
+  }
+`;
+
+const LearningWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  ${fadeUpMixin("0.65s")}
+`;
+
+const PerfWrap = styled.div`
+  width: 100%;
+  max-width: 520px;
+  ${fadeUpMixin("0.75s")}
 `;
 export default HomePage;
