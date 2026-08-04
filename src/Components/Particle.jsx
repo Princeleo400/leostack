@@ -21,8 +21,8 @@ function Particle() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
+  const particlesLoaded = () => {
+    // console.log(container);
   };
   return (
     <>

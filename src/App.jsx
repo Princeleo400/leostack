@@ -9,17 +9,13 @@ import ResumePage from "./Pages/ResumePage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Switch from "@mui/material/Switch";
 import NotFound from "./Pages/NotFound";
 import DownNav from "./Components/Nav";
-import Sidebar from "./Components/Sidebar";
-import Navbar from "./Components/Navigation";
 import { MoonIcon, SunIcon } from "./assets/svg/icons";
+import ConsoleEasterEgg from "./Components/ConsoleEasterEgg";
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
-  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -28,38 +24,19 @@ function App() {
   const themeToggler = () => {
     if (theme === "light-theme") {
       setTheme("dark-theme");
-      setChecked(false);
     } else {
       setTheme("light-theme");
-      setChecked(true);
     }
   };
   return (
     <div className="App">
-      {/* <Sidebar navToggle={"nav-toggle"} /> */}
-      {/* <Navbar /> */}
+      <ConsoleEasterEgg />
       <ThemeBtn
         onClick={themeToggler}
         aria-label={`Switch to ${theme === "dark-theme" ? "light-theme" : "dark-theme"} mode`}
       >
         {theme === "dark-theme" ? <MoonIcon /> : <SunIcon />}
       </ThemeBtn>
-      {/* <div className="theme">
-        <div className="light-dark-mode">
-          <div className="left-content">
-            <Brightness4Icon />
-          </div>
-          <div className="right-content">
-            <Switch
-              value=""
-              checked={checked}
-              inputProps={{ "aria-label": "" }}
-              size="medium"
-              onClick={themeToggler}
-            />
-          </div>
-        </div>
-      </div> */}
       <MainContentStyled>
         <div className="lines">
           <div className="line-1"></div>
