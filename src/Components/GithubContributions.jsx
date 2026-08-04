@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
-// ─── Replace with your real GitHub username ───────────────────────────────────
 const GITHUB_USERNAME = "princeleo400";
 
 const fadeIn = keyframes`
@@ -9,7 +8,6 @@ const fadeIn = keyframes`
   to   { opacity: 1; }
 `;
 
-// ─── Styled components ────────────────────────────────────────────────────────
 const Wrap = styled.div`
   background: var(--bg-card);
   border: 0.5px solid var(--border);
