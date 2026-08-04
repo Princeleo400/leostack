@@ -13,6 +13,7 @@ import NotFound from "./Pages/NotFound";
 import DownNav from "./Components/Nav";
 import { MoonIcon, SunIcon } from "./assets/svg/icons";
 import ConsoleEasterEgg from "./Components/ConsoleEasterEgg";
+import Playground from "./Components/Playground";
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
@@ -52,6 +53,7 @@ function App() {
           <Route path="/portfolios" element={<PortfoliosPage />} exact />
           <Route path="/blogs" element={<BlogsPage />} exact />
           <Route path="/contact" element={<ContactPage />} exact />
+          <Route path="/playground" element={<Playground />} exact />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainContentStyled>
