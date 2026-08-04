@@ -25,7 +25,7 @@ const TitleStyled = styled.div`
     position: relative;
     padding-bottom: 0.7rem;
     @media screen and (max-width: 496px) {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
     @media screen and (max-width: 370px) {
       font-size: 2rem;
@@ -64,7 +64,7 @@ const TitleStyled = styled.div`
     span {
       font-weight: 900;
       color: rgba(25, 29, 43, 0.44);
-      font-size: 5rem;
+      font-size: 4rem;
       position: absolute;
       left: 0;
       top: 30%;
