@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 // import Particles from 'react-particles-js';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useState } from "react";
 
-function Particle() {
+function Particle({ theme }) {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -61,7 +62,7 @@ function Particle() {
             },
             particles: {
               color: {
-                value: "#ffffff",
+                value: theme === "dark-theme" ? "#ffffff" : "#000000",
               },
               links: {
                 enable: false,

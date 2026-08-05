@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 import GithubIcon from "@mui/icons-material/GitHub";
 import { LinkedIn, Mail, WhatsApp } from "@mui/icons-material";
@@ -9,13 +10,13 @@ import { btnPrimaryMixin, btnGhostMixin, fadeUpMixin } from "../styles/shared";
 import { Link } from "react-router-dom";
 import { ArrowIcon, DownloadIcon, SparkIcon } from "../assets/svg/icons";
 
-const HomePage = () => {
+const HomePage = ({ theme }) => {
   return (
     <HomePageStyled>
       <img src={logo} alt="" style={{ width: 120, margin: 20 }}></img>
 
       <div className="particle-con">
-        <Particle />
+        <Particle theme={theme} />
       </div>
       <div className="typography">
         <RoleTag className="mb-6">
