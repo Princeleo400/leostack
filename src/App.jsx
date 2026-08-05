@@ -51,7 +51,7 @@ function App() {
         </div>
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage theme={theme} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/resume" element={<ResumePage />} exact />
           <Route path="/portfolios" element={<PortfoliosPage />} exact />
