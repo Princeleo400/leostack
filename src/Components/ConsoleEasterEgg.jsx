@@ -143,7 +143,7 @@ export default function ConsoleEasterEgg() {
             ].join(";"),
           );
           console.log(
-            "%c → hello@leostack.dev  |  leostack.netlify.app/contact",
+            "%c → getintouch.leo@gmail.com  |  leostack.netlify.app/contact",
             "color: #4580ff; font-size: 13px; text-decoration: underline;",
           );
           console.log(

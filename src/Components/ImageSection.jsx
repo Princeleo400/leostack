@@ -13,9 +13,9 @@ function ImageSection() {
     { label: "Full name", value: "Chukwuemeka Michael Ohaga" },
     {
       label: "Email",
-      value: "hello@leostack.dev",
+      value: "getintouch.leo@gmail.com",
       isLink: true,
-      href: "mailto:hello@leostack.dev",
+      href: "mailto:getintouch.leo@gmail.com",
     },
     { label: "Location", value: "Port Harcourt, Nigeria" },
     {
