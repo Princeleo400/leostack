@@ -12,11 +12,14 @@ import RubysLibrary from "../img/portImages/RubysLibrary.png";
 import Esote from "../img/portImages/esote-img.png";
 import gankco from "../img/portImages/gankco.png";
 import merge2own from "../img/portImages/merge2own.png";
-import ukech from "../img/portImages/ukech_charity.png";
+import ukech from "../img/portImages/ukech.png";
 import vivifiy from "../img/portImages/vivifiy-img.png";
 import learngual from "../img/portImages/learngual.png";
 import meeney from "../img/portImages/meeney.png";
 import otawise from "../img/portImages/otawise.png";
+import awasource from "../img/portImages/awasource.png";
+import eye from "../img/portImages/eye.png";
+import cybrxit from "../img/portImages/cybrx-it.png";
 
 export const FILTERS = [
   "All",
@@ -29,17 +32,54 @@ export const FILTERS = [
 
 const portfolios = [
   {
+    id: 1,
+    category: "Next JS",
+    image: awasource,
+    tags: ["Next JS", "TypeScript"],
+    link1: "https://www.awasource.com",
+    link2: "https://github.com/princeleo400",
+    title: "Awasource",
+    text: `Awasource is an AI-powered hiring platform that helps businesses discover, assess, and hire verified talent across Africa. It combines identity verification, skill assessments, and intelligent candidate matching into a single recruitment workflow, making hiring faster and more data-driven.`,
+    description:
+      "Developed the frontend architecture for Awasource, a SaaS hiring platform that streamlines recruitment with AI-driven talent matching, verified candidate profiles, and end-to-end hiring workflows. Focused on building a scalable, performant, and user-friendly experience with Next.js and TypeScript.",
+  },
+  {
+    id: 2,
+    category: "Next JS",
+    image: eye,
+    tags: ["Next JS", "TypeScript"],
+    link1: "https://eyeproctor.com",
+    link2: "https://github.com/princeleo400",
+    title: "Eye by proctorme",
+    text: `Eye by ProctorMe is an AI-powered online exam proctoring platform that helps educational institutions and organizations conduct secure remote assessments. It combines real-time monitoring, automated fraud detection, and comprehensive reporting to maintain exam integrity.`,
+    description:
+      "Developed the frontend for Eye by ProctorMe, It combines real-time monitoring, automated fraud detection, and comprehensive reporting to maintain exam integrity. Also responsible for building responsive interfaces for exam sessions, AI-powered monitoring dashboards, and multi-role admin portals. Focused on creating a seamless experience for students, instructors, and administrators using Next.js and TypeScript.",
+  },
+  {
+    id: 13,
+    category: "React JS",
+    image: vivifiy,
+    tags: ["Next JS", "React JS"],
+    link1: "https://www.vivifiy.com/",
+    link2: "https://github.com/princeleo400",
+    title: "Vivifiy",
+    text: `An all-in-one digital learning platform where creators can build, host, and sell courses, e-books, and mentorship programs.
+    It combines flexible payment options, in-depth analytics, and community features for both creators and learners.`,
+    description:
+      "Built an all-in-one edtech platform, with courses, e-books, mentorship, and analytics for creators. Implemented payment flows, community features and creator dashboards.",
+  },
+  {
     id: 3,
     category: "Next JS",
     image: Proctorme,
     tags: ["Next JS", "TypeScript"],
-    link1: "https://proctorme.com",
+    link1: "https://www.proctorme.com/",
     link2: "https://github.com/princeleo400",
     title: "Proctorme",
     text: `Proctorme is a leading remote proctoring platform in Africa committed to giving Africans access to the best AI-proctoring solution.
         With the platform, its very easy to  sit for  exams remotely and still maintain the integrity of the examination with robust AI-proctoring features .`,
     description:
-      "Built the complete frontend for Africa's leading AI-proctoring platform — exam session UI, monitoring dashboard, and multi-role admin portal serving students across 8 African countries.",
+      "Built the complete frontend for Africa's leading AI-proctoring platform, with features like exam session UI, monitoring dashboard, and multi-role admin portal serving students across 8 African countries.",
   },
   {
     id: 12,
@@ -56,19 +96,6 @@ const portfolios = [
       "Designed and built the full marketing site and client portal for a 100% Nigerian upstream oil & gas company — production enhancement, equipment sales and well intervention.",
   },
   {
-    id: 13,
-    category: "React JS",
-    image: vivifiy,
-    tags: ["Next JS", "React JS"],
-    link1: "https://vivifiy.com/",
-    link2: "https://github.com/princeleo400",
-    title: "Vivifiy",
-    text: `An all-in-one digital learning platform where creators can build, host, and sell courses, e-books, and mentorship programs.
-    It combines flexible payment options, in-depth analytics, and community features for both creators and learners.`,
-    description:
-      "Built an all-in-one edtech platform — courses, e-books, mentorship, and analytics for creators. Implemented payment flows, community features and creator dashboards.",
-  },
-  {
     id: 14,
     category: "React JS",
     image: learngual,
@@ -79,7 +106,7 @@ const portfolios = [
     text: `Learngual is an AI-powered language-learning platform that helps users master any language and perfect their pronunciation. 
     It was built with an intelligent feedback system, learners can progress at their own pace and build confidence in speaking as naturally as a native.`,
     description:
-      "Developed the UI for an AI-powered language-learning platform with adaptive feedback, progress tracking, and confidence-building exercises.",
+      "Developed the frontend for an AI-powered language-learning platform with adaptive feedback, progress tracking, and confidence-building exercises.",
   },
   {
     id: 17,
@@ -92,7 +119,7 @@ const portfolios = [
     text: `Meeney is a community‑focused digital marketplace designed to help people shop and buy more easily from nearby sellers. 
     Currently in wait-list mode...`,
     description:
-      "Community digital marketplace — product listings, local seller onboarding, cart and checkout flow. Currently in waitlist phase with active signups.",
+      "Community digital marketplace, with features like product listings, local seller onboarding, cart and checkout flow. Currently in waitlist phase with active signups.",
   },
   {
     id: 15,
@@ -105,17 +132,20 @@ const portfolios = [
     text: `Esote is a remote-tech recruitment and management platform powered by AI. 
     It connects startups with pre-vetted tech talent (especially students) for affordable, real-world remote work.`,
     description:
-      "Built the recruitment platform frontend — employer and candidate dashboards, vetted-talent listings, and a flexible pricing page for affordable remote tech hiring.",
+      "Built the recruitment platform frontend, with features like employer and candidate dashboards, vetted-talent listings, and a flexible pricing page for affordable remote tech hiring.",
   },
   {
     id: 16,
     category: "React JS",
     image: merge2own,
+    tags: ["React JS", "TypeScript"],
     link1: "https://merge2own.com/",
     link2: "https://github.com/princeleo400",
     title: "Merge2own",
     text: `Merge2Own is a co-ownership platform that enables individuals with aligned financial goals to come together and jointly own property. 
     It lowers the entry barrier for first-time home buyers by making shared ownership transparent and accessible.`,
+    description:
+      "Led frontend development for Merge2Own, delivering responsive user flows for onboarding, financial planning, co-owner matching, and property exploration with a focus on performance and usability.",
   },
   {
     id: 18,
@@ -133,6 +163,18 @@ const portfolios = [
   },
   {
     id: 19,
+    category: "Wordpress",
+    image: cybrxit,
+    tags: ["Wordpress"],
+    link1: "https://cybrxit.com/",
+    link2: "https://github.com/princeleo400",
+    title: "Cybrxit",
+    text: `CybrX IT is an enterprise cybersecurity and managed IT company that helps organizations strengthen their security posture, modernize IT infrastructure, and meet compliance requirements through managed services and strategic technology consulting.`,
+    description:
+      "Contributed to the development of the CybrX IT website, implementing responsive WordPress pages and reusable components to showcase the company's cybersecurity, managed IT, and consulting services while improving the overall user experience.",
+  },
+  {
+    id: 20,
     category: "React JS",
     image: ukech,
     tags: ["React JS", "Javascript"],
@@ -141,13 +183,13 @@ const portfolios = [
     title: "Ukech Charity Foundation",
     text: `A nonprofit organization dedicated to empowering refugees especially children, by providing education, essential services, and support..`,
     description:
-      "Built the website for a nonprofit empowering refugees through education and essential services — donation flow, programme pages, and volunteer sign-up.",
+      "Built the website for a nonprofit empowering refugees through education and essential services, donation flow, programme pages, and volunteer sign-up.",
   },
 ];
 
 export const olderProjects = [
   {
-    id: 2,
+    id: 24,
     category: "React JS",
     image: MusicPlayer,
     tags: ["React JS"],
