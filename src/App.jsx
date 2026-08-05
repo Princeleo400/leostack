@@ -14,24 +14,28 @@ import DownNav from "./Components/Nav";
 import { MoonIcon, SunIcon } from "./assets/svg/icons";
 import ConsoleEasterEgg from "./Components/ConsoleEasterEgg";
 import Playground from "./Components/Playground";
+import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
-  const [theme, setTheme] = useState("dark-theme");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark-theme";
+  });
 
   useEffect(() => {
     document.documentElement.className = theme;
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const themeToggler = () => {
-    if (theme === "light-theme") {
-      setTheme("dark-theme");
-    } else {
-      setTheme("light-theme");
-    }
+    setTheme((prevTheme) =>
+      prevTheme === "light-theme" ? "dark-theme" : "light-theme",
+    );
   };
   return (
     <div className="App">
       <ConsoleEasterEgg />
+      <ScrollToTop />
+
       <ThemeBtn
         onClick={themeToggler}
         aria-label={`Switch to ${theme === "dark-theme" ? "light-theme" : "dark-theme"} mode`}

@@ -164,7 +164,7 @@ function ContactPage() {
             <ContactItem
               title={"Email"}
               icon={email}
-              cont1={"ohagamichael@gmail.com"}
+              cont1={"getintouch.leo@gmail.com"}
             />
             <ContactItem
               title={"Address"}
