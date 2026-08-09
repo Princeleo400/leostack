@@ -109,7 +109,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
-    transition: all .4s ease-in-out;
+    /* transition: all .4s ease-in-out; */
     
 }
 
