@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import "./App.css";
 import "./index.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
@@ -17,11 +17,29 @@ import Playground from "./Components/Playground";
 import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
+  const location = useLocation();
+  const validRoutes = [
+    "/",
+    "/about",
+    "/resume",
+    "/portfolios",
+    "/blogs",
+    "/contact",
+    "/playground",
+  ];
+  const is404 = !validRoutes.includes(location.pathname);
+
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark-theme";
+    const saved = localStorage.getItem("theme") || "dark-theme";
+    return saved;
   });
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   document.documentElement.className = theme;
+  //   localStorage.setItem("theme", theme);
+  // }, [theme]);
+
+  useLayoutEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
@@ -58,11 +76,11 @@ function App() {
           <Route path="/blogs" element={<BlogsPage />} exact />
           <Route path="/contact" element={<ContactPage />} exact />
           <Route path="/playground" element={<Playground />} exact />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound theme={theme} />} />
         </Routes>
       </MainContentStyled>
 
-      <DownNav />
+      {!is404 && <DownNav />}
     </div>
   );
 }
