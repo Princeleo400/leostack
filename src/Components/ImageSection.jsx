@@ -1,7 +1,5 @@
-import React from "react";
 import styled from "styled-components";
 import Leo from "../img/Leo.jpg";
-import PrimaryButton from "./PrimaryButton";
 import "../app.scss";
 import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
 import { btnGhostMixin, fadeUpMixin } from "../styles/shared";
@@ -40,9 +38,9 @@ function ImageSection() {
         </PhotoWrap>
 
         <BioWrap className="flex flex-col gap-4">
-          <BioLead>
+          {/* <BioLead>
             I'm <span>Leo</span>
-          </BioLead>
+          </BioLead> */}
 
           <BioText>
             Senior Frontend Engineer with 4+ years of experience designing and
@@ -234,17 +232,17 @@ const BioWrap = styled.div`
   ${fadeUpMixin("0.2s")}
 `;
 
-const BioLead = styled.p`
-  font-size: clamp(24px, 3vw, 32px);
-  font-weight: 700;
-  color: var(--text-primary);
+// const BioLead = styled.p`
+//   font-size: clamp(24px, 3vw, 32px);
+//   font-weight: 700;
+//   color: var(--text-primary);
 
-  span {
-    color: var(--blue);
-    font-style: italic;
-    font-size: clamp(24px, 3vw, 32px);
-  }
-`;
+//   span {
+//     color: var(--blue);
+//     font-style: italic;
+//     font-size: clamp(24px, 3vw, 32px);
+//   }
+// `;
 
 const BioText = styled.p`
   font-size: 14px;

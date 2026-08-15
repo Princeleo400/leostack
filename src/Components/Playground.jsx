@@ -9,7 +9,6 @@ import {
   EditorTextarea,
   Page,
   PreviewPane,
-  SectionTitle,
   ShowBadge,
   ShowBtn,
   ShowCard,
