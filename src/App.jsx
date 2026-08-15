@@ -27,7 +27,10 @@ function App() {
     "/contact",
     "/playground",
   ];
-  const is404 = !validRoutes.includes(location.pathname);
+  const pathname =
+    location.pathname === "/" ? "/" : location.pathname.replace(/\/+$/, "");
+
+  const is404 = !validRoutes.includes(pathname);
 
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("theme") || "dark-theme";
