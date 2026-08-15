@@ -30,9 +30,9 @@ function Menu({ menuItem }) {
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6"
       role="list"
     >
-      {menuItem.map((item) => {
+      {menuItem?.map((item) => {
         return (
-          <Card>
+          <Card key={item?.id}>
             <CardImgWrap>
               <CardImg
                 src={item?.image}
