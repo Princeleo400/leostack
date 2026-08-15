@@ -1,12 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
 import Title from "./Title";
-import ProgressBar from "./ProgressBar";
 import {
   Android,
   Bootstrap,
-  CSS,
   Firebase,
   Graphql,
   HTML,
@@ -22,11 +19,8 @@ import {
   SCSS,
   Tailwind,
   Wordpress,
-  Typescript,
   Typescript2,
 } from "../assets/svg/skills";
-import SkillsCard from "./skillsCard";
-import ResponsiveWeb from "../assets/img/icons8-responsive-design-64.png";
 import { fadeUpMixin } from "../styles/shared";
 
 function Skills() {

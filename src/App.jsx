@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import "./App.css";
 import "./index.css";
 import { Route, Routes, useLocation } from "react-router-dom";

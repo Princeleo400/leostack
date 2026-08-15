@@ -24,7 +24,7 @@ const HomePage = ({ theme }) => {
           {/* · 4+ years */}
         </RoleTag>
         <Headline className="mb-5">
-          Hi, I'm <NameAccent>LEO</NameAccent>
+          Hi, I&apos;m <NameAccent>LEO</NameAccent>
         </Headline>
         <Subtitle className="max-w-md mb-8">
           I design and build product-grade web applications for startups and

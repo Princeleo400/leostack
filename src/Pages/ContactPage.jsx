@@ -1,9 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
-import PrimaryButton from "../Components/PrimaryButton";
-import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactItem from "../Components/ContactItem";
@@ -11,7 +9,7 @@ import emailjs from "@emailjs/browser";
 import "../app.scss";
 
 function ContactPage() {
-  const phone = <PhoneIcon />;
+  // const phone = <PhoneIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;
 
