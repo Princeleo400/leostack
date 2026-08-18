@@ -1,10 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import Skeleton from "react-loading-skeleton";
-import { useInView } from "react-intersection-observer";
-import "react-loading-skeleton/dist/skeleton.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import {
   ActionBtn,
   Card,
@@ -17,13 +11,6 @@ import {
 import { ExtIcon } from "../assets/svg/icons";
 
 function Menu({ menuItem }) {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // only load once
-    threshold: 0.1, // 10% visible = considered "in view"
-  });
-
-  const [loaded, setLoaded] = useState(false);
-  const imgRef = useRef(null);
 
   return (
     <div
