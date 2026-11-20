@@ -3,7 +3,7 @@ import styled from "styled-components";
 import GithubIcon from "@mui/icons-material/GitHub";
 import { LinkedIn, Mail, WhatsApp } from "@mui/icons-material";
 import "../app.scss";
-import CV from "../data/Chukwuemeka-Michael-Ohaga-Resume-CV.pdf";
+import CV from "../data/Chukwuemeka_Michael_Ohaga_CV.pdf";
 import logo from "../img/LEOPhotoRoom(2).png";
 import Particle from "../Components/Particle";
 import { btnPrimaryMixin, btnGhostMixin, fadeUpMixin } from "../styles/shared";

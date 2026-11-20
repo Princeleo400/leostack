@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Leo from "../img/Leo.jpg";
 import "../app.scss";
-import CV from "../data/CV_Chukwuemeka_Michael_Ohaga.pdf";
+import CV from "../data/Chukwuemeka_Michael_Ohaga_CV.pdf";
 import { btnGhostMixin, fadeUpMixin } from "../styles/shared";
 import { DownloadIcon } from "../assets/svg/icons";
 // import Skeleton from 'react-loading-skeleton'
